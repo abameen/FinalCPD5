@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ann Arbor Skyline — Athletes</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="index.html">Ann Arbor Skyline</a></h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html" aria-current="page">Athletes</a></li>
+          <li><a href="mainMeets.html">Meets</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Search and sort</legend>
+
+          <label for="search">Search</label>
+          <input id="search" name="search" type="search" />
+
+          <label for="sort">Sort</label>
+          <select id="sort" name="sort">
+            <option value="name-asc">Athlete name (A–Z)</option>
+            <option value="name-desc">Athlete name (Z–A)</option>
+          </select>
+
+          <button type="submit">Apply</button>
+        </fieldset>
+      </form>
+
+
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Level</th>
+              <th scope="col">Athlete Name</th>
+              <th scope="col">Best Time</th>
+              <th scope="col">Best Place</th>
+            </tr>
+          </thead>
+
+          <tbody>
+              <tr>
+                <td data-label="Level">V</td>
+                <td data-label="Athlete Name"><a href="athlete.html">Garrett Comer</a></td>
+                <td data-label="Best Time">16:42</td>
+                <td data-label="Best Place">2</td>
+              </tr>
+
+              <tr>
+                <td data-label="Level">V</td>
+                <td data-label="Athlete Name"><a href="athlete.html">Avery Patel</a></td>
+                <td data-label="Best Time">17:05</td>
+                <td data-label="Best Place">1</td>
+              </tr>
+
+              <tr>
+                <td data-label="Level">JV</td>
+                <td data-label="Athlete Name"><a href="athlete.html">Sam Nguyen</a></td>
+                <td data-label="Best Time">17:33</td>
+                <td data-label="Best Place">5</td>
+              </tr>
+
+              <tr>
+                <td data-label="Level">JV</td>
+                <td data-label="Athlete Name"><a href="athlete.html">Taylor Chen</a></td>
+                <td data-label="Best Time">18:10</td>
+                <td data-label="Best Place">9</td>
+              </tr>
+
+              <tr>
+                <td data-label="Level">V</td>
+                <td data-label="Athlete Name"><a href="athlete.html">Riley Johnson</a></td>
+                <td data-label="Best Time">18:44</td>
+                <td data-label="Best Place">12</td>
+              </tr>
+            <!-- <tr>
+              <td>V</td>
+              <td><a href="athlete.html">Garrett Comer</a></td>
+              <td>16:42</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>V</td>
+              <td><a href="athlete.html">Avery Patel</a></td>
+              <td>17:05</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>JV</td>
+              <td><a href="athlete.html">Sam Nguyen</a></td>
+              <td>17:33</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>JV</td>
+              <td><a href="athlete.html">Taylor Chen</a></td>
+              <td>18:10</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>V</td>
+              <td><a href="athlete.html">Riley Johnson</a></td>
+              <td>18:44</td>
+              <td>12</td>
+            </tr> -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
