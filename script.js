@@ -31,7 +31,7 @@ if (searchInput) {
           noResults.id = "no-results-msg";
           noResults.innerHTML =
             '<td colspan="10" style="text-align:center;padding:1.5rem;' +
-            'font-family:var(--font-display);color:var(--color-text-muted);' +
+            'font-family:var(--font-display);color:var(--color-primary);' +
             'letter-spacing:.05em;text-transform:uppercase;font-size:.9rem;">' +
             "No results found</td>";
           tbody.appendChild(noResults);
@@ -164,7 +164,6 @@ if (fab) {
   navLinks.forEach(function (link) {
     const href = link.getAttribute("href");
     if (href === currentPage || (currentPage === "" && href === "index.html")) {
-      link.setAttribute("aria-current", "page");
     } else {
       /* Remove stale aria-current if the HTML had it wrong */
       if (link.getAttribute("aria-current") === "page") {

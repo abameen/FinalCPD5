@@ -11,11 +11,13 @@
 
   <body>
     <header>
-      <h1><a href="index.html">Ann Arbor Skyline</a></h1>
+      <!-- <h1><a href="index.html">Ann Arbor Skyline</a></h1> -->
+      <h1>Ann Arbor Skyline</h1>
 
       <nav>
         <ul>
-          <li><a href="index.html" aria-current="page">Athletes</a></li>
+          <!-- <li><a href="index.html" aria-current="page">Athletes</a></li> -->
+          <li><a href="index.html">Athletes</a></li>
           <li><a href="mainMeets.html">Meets</a></li>
         </ul>
       </nav>
@@ -25,14 +27,17 @@
       <form action="#" method="get">
         <fieldset>
           <legend>Search and sort</legend>
+          <p id="search-help">Type to filter athletes or choose a sort order.</p>
 
           <label for="search">Search</label>
-          <input id="search" name="search" type="search" />
-
+          <!-- <input id="search" name="search" type="search" /> -->
+          <input id="search" name="search" type="search" aria-describedby="search-help" />
           <label for="sort">Sort</label>
           <select id="sort" name="sort">
-            <option value="name-asc">Athlete name (A–Z)</option>
-            <option value="name-desc">Athlete name (Z–A)</option>
+            <!-- <option value="name-asc">Athlete name (A–Z)</option>
+            <option value="name-desc">Athlete name (Z–A)</option> -->
+            <option value="name-asc">Sort by athlete name (A–Z)</option>
+            <option value="name-desc">Sort by athlete name (Z–A)</option>
           </select>
 
           <button type="submit">Apply</button>
