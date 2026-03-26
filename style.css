@@ -600,7 +600,7 @@ footer a {
   --color-surface-2:  #eceae3;
   --color-border:     #d0ccbf;
   --color-text:       #1a1a1a;
-  --color-text-muted: #5a5750;
+  --color-text-muted: #3a3730;  
   --color-link:       #1a3a6b;
   --color-link-hover: #e8c131;
   --color-row-even:   #f0eeea;
@@ -740,7 +740,7 @@ nav ul {
 }
 
 nav a {
-  color: rgba(255,255,255,.82);
+  color:  #ffffff;  /* higher contrast on dark header */
   text-decoration: none;
   font-family: var(--font-display);
   font-size: .9rem;
@@ -1214,7 +1214,7 @@ figure img {
 ------------------------------ */
 footer {
   background: var(--color-primary);
-  color: rgba(255,255,255,.7);
+  color: #ffffff; /* higher contrast on dark footer */;
   text-align: center;
   padding: 1rem;
   font-size: .85rem;
