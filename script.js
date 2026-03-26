@@ -104,15 +104,16 @@ if (sortSelect) {
   sortSelect.addEventListener("change", function () {
     sortTable(sortSelect);
   });
+
  
-  /* Also handle form submit (Apply button) */
-  const form = sortSelect.closest("form");
+
+  const form = searchInput.closest("form");
   if (form) {
     form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      sortTable(sortSelect);
+        e.preventDefault();
     });
-  }
+}
+
 }
  
  
