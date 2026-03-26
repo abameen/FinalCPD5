@@ -189,4 +189,40 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     }
   });
 });
- 
+
+/*Enhances any <a href="#..."> links beyond CSS scroll-behavior*/
+document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+  anchor.addEventListener("click", function (e) {
+    const targetId = anchor.getAttribute("href").slice(1);
+    const target = document.getElementById(targetId);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      /* Move focus for accessibility */
+      target.setAttribute("tabindex", "-1");
+      target.focus({ preventScroll: true });
+    }
+  });
+});
+
+/* If an image file is missing, show a simple "Image not available" fallback */
+document.querySelectorAll("img").forEach(function (img) {
+  img.addEventListener("error", function () {
+    const wrapper = document.createElement("div");
+    wrapper.style.width = img.width ? img.width + "px" : "200px";
+    wrapper.style.height = img.height ? img.height + "px" : "200px";
+    wrapper.style.display = "flex";
+    wrapper.style.alignItems = "center";
+    wrapper.style.justifyContent = "center";
+    wrapper.style.borderRadius = "8px";
+    wrapper.style.border = "1px solid var(--color-border)";
+    wrapper.style.backgroundColor = "var(--color-surface-2)";
+    wrapper.style.fontFamily = "var(--font-display)";
+    wrapper.style.fontSize = ".85rem";
+    wrapper.style.textTransform = "uppercase";
+    wrapper.style.letterSpacing = ".06em";
+    wrapper.textContent = "Image not available";
+
+    img.replaceWith(wrapper);
+  }, { once: true });
+});
