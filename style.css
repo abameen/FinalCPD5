@@ -593,8 +593,8 @@ figure img {
 
 
 .fab {
-  background-color: #1a3a6b !important; /* darker blue */
-  color: #ffffff !important;
+  background-color: #1a3a6b ; /* darker blue */
+  color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
