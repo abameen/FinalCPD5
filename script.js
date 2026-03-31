@@ -116,18 +116,19 @@ if (sortSelect) {
 
 }
 
-function injectFABIfMissing() {
-  if (!document.querySelector(".fab")) {
-    const fab = document.createElement("button");
-    fab.className = "fab";
-    fab.setAttribute("aria-label", "Scroll to top");
-    fab.setAttribute("title", "Scroll to top");
-    fab.textContent = "Top";
-    document.body.appendChild(fab);
-  }
-}
+// function injectFABIfMissing() {
+//   if (!document.querySelector(".fab")) {
+//     const fab = document.createElement("button");
+//     fab.className = "fab";
+//     fab.setAttribute("aria-label", "Scroll to top");
+//     fab.setAttribute("title", "Scroll to top");
+//     fab.textContent = "Top";
+//     document.body.appendChild(fab);
+//   }
+// }
 
-injectFABIfMissing();
+// injectFABIfMissing();
+
 
 const fab = document.querySelector(".fab");
 if (fab) {
@@ -135,6 +136,7 @@ if (fab) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
+
 
 /*ACTIVE NAV HIGHLIGHT, Marks the nav link matching the current page as active, and Adds aria-current="page" for accessibility. */
 (function highlightActiveNav() {
