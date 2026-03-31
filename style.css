@@ -199,6 +199,13 @@ legend {
   background-color: transparent; 
 }
 
+@media (max-width: 480px) {
+  legend {
+    color: var(--color-accent); /* #e8c131 yellow — high contrast on dark */
+  }
+}
+
+
 label {
   display: block;
   font-size: .85rem;
