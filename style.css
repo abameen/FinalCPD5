@@ -647,9 +647,14 @@ figure img {
   z-index: 200;
 } */
 
-.fab {
+/* .fab {
   background: var(--color-primary);
   color: #ffffff;
+} */
+
+.fab {
+  background-color: #1a3a6b !important; /* darker blue */
+  color: #ffffff !important;
 }
 
 @media (prefers-color-scheme: dark) {
