@@ -116,18 +116,18 @@ if (sortSelect) {
 
 }
 
-// function injectFABIfMissing() {
-//   if (!document.querySelector(".fab")) {
-//     const fab = document.createElement("button");
-//     fab.className = "fab";
-//     fab.setAttribute("aria-label", "Scroll to top");
-//     fab.setAttribute("title", "Scroll to top");
-//     fab.textContent = "Top";
-//     document.body.appendChild(fab);
-//   }
-// }
+function injectFABIfMissing() {
+  if (!document.querySelector(".fab")) {
+    const fab = document.createElement("button");
+    fab.className = "fab";
+    fab.setAttribute("aria-label", "Scroll to top");
+    fab.setAttribute("title", "Scroll to top");
+    fab.textContent = "Top";
+    document.body.appendChild(fab);
+  }
+}
 
-// injectFABIfMissing();
+injectFABIfMissing();
 
 
 const fab = document.querySelector(".fab");
