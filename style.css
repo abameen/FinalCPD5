@@ -1,9 +1,5 @@
-/* -----------------------------
-   DESIGN TOKENS / CSS VARIABLES
-   Beginner note:
-   These variables let us keep colors, fonts, and spacing
-   consistent across the whole site in one place.
------------------------------- */
+/* These variables let us keep colors, fonts, and spacing
+   consistent across the whole site in one place. */
 :root {
   --color-primary:    #1a3a6b;
   --color-accent:     #e8c131;
