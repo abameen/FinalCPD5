@@ -191,22 +191,7 @@ form {
 
 fieldset { border: none; }
 
-/* legend {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--color-primary);
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  margin-bottom: .75rem;
-  background-color: transparent; 
-}
 
-@media (max-width: 480px) {
-  legend {
-    color: var(--color-accent); /* #e8c131 yellow — high contrast on dark */
-  }
-/* }  */
 legend {
   color: var(--color-primary);
   background-color: var(--color-surface);
@@ -239,12 +224,6 @@ select {
   -webkit-appearance: none;
 }
 
-/* input[type="search"]:focus,
-select:focus {
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(26,58,107,.2);
-  outline: none;
-} */
 input[type="search"]:focus,
 select:focus {
   border-color: var(--color-primary);
@@ -386,7 +365,7 @@ th {
   }
 }
 
-/* DESKTOP/TABLET: normal table layout */
+/*normal table layout */
 @media (min-width: 769px) {
 
   table {
@@ -448,7 +427,7 @@ th {
   }
 }
 
-/* Optional: extra desktop tweaks (wide screens) */
+/* extra desktop tweaks (wide screens) */
 @media (min-width: 1024px) {
   main {
     max-width: 960px;
@@ -456,9 +435,7 @@ th {
   }
 }
 
-/* -----------------------------
-   ATHLETE PAGE COMPONENTS
------------------------------- */
+/* athlete page components*/
 .athlete-hero {
   display: flex;
   flex-direction: column;
@@ -551,9 +528,7 @@ figure img {
   outline: none;
 }
 
-/* -----------------------------
-   MEETS PAGE
------------------------------- */
+/*MEETS PAGE*/
 .meet-header {
   background: var(--color-primary);
   color: #fff;
@@ -571,10 +546,7 @@ figure img {
   letter-spacing: .04em;
 }
 
-/* -----------------------------
-   ANIMATIONS
-   Comments explain what each one does.
------------------------------- */
+/* ANIMATIONS: Comments explain what each one does.*/
 
 /* fadeInUp: used for main content / hero sections */
 @keyframes fadeInUp {
@@ -632,9 +604,7 @@ figure img {
   transform: scale(1.1);
 }
 
-/* -----------------------------
-   FOOTER
------------------------------- */
+/*FOOTER*/
 footer {
   background: var(--color-primary);
   color: #ffffff; /* higher contrast on dark footer */;
@@ -654,11 +624,8 @@ footer a {
   }
 }
 
-/* -----------------------------
-   REDUCED MOTION (ACCESSIBILITY)
-   If the user prefers less animation,
-   we turn off most transitions and keyframes.
------------------------------- */
+/* This is for reduced motion */
+/* if the user just wants less animation, this block turns off most transitions and keyframes */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.001ms;

@@ -5,12 +5,12 @@ if (searchInput) {
   searchInput.addEventListener("input", function () {
     const filter = searchInput.value.toLowerCase().trim();
     const rows = document.querySelectorAll("tbody tr");
- 
+
     rows.forEach(function (row) {
       const text = row.textContent.toLowerCase();
       const match = text.includes(filter);
       row.style.display = match ? "" : "none";
- 
+
       /* Subtle highlight animation on re-show */
       if (match && filter.length > 0) {
         row.style.animation = "none";
