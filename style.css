@@ -225,11 +225,18 @@ select {
   -webkit-appearance: none;
 }
 
-input[type="search"]:focus,
+/* input[type="search"]:focus,
 select:focus {
   border-color: var(--color-primary);
   box-shadow: 0 0 0 3px rgba(26,58,107,.2);
   outline: none;
+} */
+input[type="search"]:focus,
+select:focus {
+  border-color: var(--color-primary);
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  box-shadow: none;
 }
 
 button[type="submit"] {
