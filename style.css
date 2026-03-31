@@ -46,6 +46,8 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.65;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background-image: repeating-linear-gradient(
     135deg,
@@ -55,6 +57,11 @@ body {
     rgba(0,0,0,.015) 41px
   );
 }
+
+main {
+  flex: 1;
+}
+
 
 img {
   display: block;
