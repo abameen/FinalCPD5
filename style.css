@@ -188,7 +188,7 @@ form {
 
 fieldset { border: none; }
 
-legend {
+/* legend {
   font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 600;
@@ -203,6 +203,10 @@ legend {
   legend {
     color: var(--color-accent); /* #e8c131 yellow — high contrast on dark */
   }
+/* }  */
+legend {
+  color: var(--color-primary);
+  background-color: var(--color-surface);
 }
 
 
