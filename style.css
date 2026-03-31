@@ -632,6 +632,21 @@ figure img {
   transition: transform var(--transition), background var(--transition);
 } */
 
+/* .fab {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: .6rem .9rem;
+  background: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius);
+  font-family: var(--font-display);
+  font-size: .9rem;
+  cursor: pointer;
+  z-index: 200;
+} */
+
 .fab {
   position: fixed;
   bottom: 1rem;

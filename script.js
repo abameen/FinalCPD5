@@ -122,13 +122,48 @@ if (sortSelect) {
 // If a .fab button exists, clicking it scrolls to top.
 // If none exists, one is injected automatically.
 
+// function injectFABIfMissing() {
+//   if (!document.querySelector(".fab")) {
+//     const fab = document.createElement("button");
+//     fab.className = "fab";
+//     fab.setAttribute("aria-label", "Scroll to top");
+//     fab.setAttribute("title", "Scroll to top");
+//     fab.textContent = "↑";
+//     document.body.appendChild(fab);
+//   }
+// }
+
+// injectFABIfMissing();
+
+// const fab = document.querySelector(".fab");
+// if (fab) {
+//   /* Only show FAB after scrolling down a bit */
+//   fab.style.opacity = "0";
+//   fab.style.pointerEvents = "none";
+//   fab.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+ 
+//   window.addEventListener("scroll", function () {
+//     if (window.scrollY > 200) {
+//       fab.style.opacity = "1";
+//       fab.style.pointerEvents = "auto";
+//     } else {
+//       fab.style.opacity = "0";
+//       fab.style.pointerEvents = "none";
+//     }
+//   });
+ 
+//   fab.addEventListener("click", function () {
+//     window.scrollTo({ top: 0, behavior: "smooth" });
+//   });
+// }
+
 function injectFABIfMissing() {
   if (!document.querySelector(".fab")) {
     const fab = document.createElement("button");
     fab.className = "fab";
     fab.setAttribute("aria-label", "Scroll to top");
     fab.setAttribute("title", "Scroll to top");
-    fab.textContent = "↑";
+    fab.textContent = "Top";
     document.body.appendChild(fab);
   }
 }
@@ -137,21 +172,6 @@ injectFABIfMissing();
 
 const fab = document.querySelector(".fab");
 if (fab) {
-  /* Only show FAB after scrolling down a bit */
-  fab.style.opacity = "0";
-  fab.style.pointerEvents = "none";
-  fab.style.transition = "opacity 0.3s ease, transform 0.3s ease";
- 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 200) {
-      fab.style.opacity = "1";
-      fab.style.pointerEvents = "auto";
-    } else {
-      fab.style.opacity = "0";
-      fab.style.pointerEvents = "none";
-    }
-  });
- 
   fab.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
