@@ -197,6 +197,12 @@ legend {
   background-color: var(--color-surface);
 }
 
+@media (prefers-color-scheme: dark) {
+  legend {
+    color: var(--color-text);
+  }
+}
+
 
 label {
   display: block;
